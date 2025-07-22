@@ -47,3 +47,39 @@ window.onscroll = () => {
 
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
+
+const num = 8;
+const dots = [];
+
+for (let i = 0; i < num; i++) {
+  const d = document.createElement('div');
+  d.classList.add('dot');
+  document.body.appendChild(d);
+  dots.push({el: d, x: 0, y: 0});
+}
+
+let mouse = {x: 0, y: 0};
+
+document.addEventListener('mousemove', (e) => {
+  mouse.x = e.clientX;
+  mouse.y = e.clientY;
+});
+
+function animate() {
+  let x = mouse.x;
+  let y = mouse.y;
+
+  dots.forEach((dot, index) => {
+    dot.el.style.left = x + 'px';
+    dot.el.style.top = y + 'px';
+    dot.x += (x - dot.x) * 0.3;
+    dot.y += (y - dot.y) * 0.3;
+    dot.el.style.transform = `translate(${dot.x - x}px, ${dot.y - y}px)`;
+    x = dot.x;
+    y = dot.y;
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
