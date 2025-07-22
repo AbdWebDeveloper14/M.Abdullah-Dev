@@ -963,13 +963,3 @@ section:nth-child(odd) .animate.scroll,
 }
 
 
-.dot {
-  position: fixed;
-  width: 24px;
-  height: 24px;
-  background: #ededed;
-  border-radius: 50%;
-  pointer-events: none;
-  opacity: 0.8;
-  transition: transform 0.2s ease;
-}
