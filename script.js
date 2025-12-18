@@ -98,12 +98,6 @@ const projects = [
         link: "https://compu-parts.vercel.app/",
         image: "images/compu-parts.png"
     },
-    {
-        title: "Sales Management DashBoard",
-        summary: "This is an Sales Management Dashboard project. made with Css, Html, javascript",
-        link: "https://sales-management-dashboard-ten.vercel.app",
-        image: "images/dashboard.png"
-    }
 ];
 
 // Render projects
