@@ -129,14 +129,14 @@ const revealProjects = () => {
 window.addEventListener('scroll', revealProjects);
 revealProjects();
 
-window.addEventListener("load", () => {
-        setTimeout(() => {
-            const loader = document.getElementById("loader");
-            loader.classList.add("hide");
+// window.addEventListener("load", () => {
+//         setTimeout(() => {
+//             const loader = document.getElementById("loader");
+//             loader.classList.add("hide");
 
-            setTimeout(() => {
-                loader.remove();
-            }, 600); // same as CSS transition
-        }, 2000);
-});
+//             setTimeout(() => {
+//                 loader.remove();
+//             }, 600); // same as CSS transition
+//         }, 2000);
+// });
 
