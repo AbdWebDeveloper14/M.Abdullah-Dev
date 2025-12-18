@@ -97,6 +97,12 @@ const projects = [
         summary: "Computer parts selling responsive e-commerce UI.",
         link: "https://compu-parts.vercel.app/",
         image: "images/compu-parts.png"
+    },
+    {
+        title: "Sales Management DashBoard",
+        summary: "This is an Sales Management Dashboard project. made with Css, Html, javascript",
+        link: "https://sales-management-dashboard-ten.vercel.app",
+        image: "images/dashboard.png"
     }
 ];
 
@@ -129,7 +135,7 @@ const revealProjects = () => {
 window.addEventListener('scroll', revealProjects);
 revealProjects();
 
-    window.addEventListener("load", () => {
+window.addEventListener("load", () => {
         setTimeout(() => {
             const loader = document.getElementById("loader");
             loader.classList.add("hide");
@@ -138,5 +144,5 @@ revealProjects();
                 loader.remove();
             }, 600); // same as CSS transition
         }, 2000);
-    });
+});
 
